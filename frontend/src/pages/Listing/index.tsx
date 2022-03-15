@@ -1,12 +1,31 @@
 import Pagination from "components/Pagination";
 import MovieCard from "components/MovieCard";
-import './styles.css'
 
 function Listing() {
     return (
         <>
         <Pagination />
-        <MovieCard />
+
+        <div className="conatiner">
+            <div className="row">
+                <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <MovieCard />
+                </div>
+                <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <MovieCard />
+                </div>
+                <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <MovieCard />
+                </div>
+                <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <MovieCard />
+                </div>
+                <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <MovieCard />
+                </div>
+            </div>
+        </div>
+        
         </>
     );
 }
